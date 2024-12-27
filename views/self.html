@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/self.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>个人中心</h1>
+      <div class="nav-links">
+        <a href="./rpwd.html">修改密码</a>
+        <a href="./index.html">回到首页</a>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <form class="profile-form">
+        <div class="form-group">
+          <label>用户名：</label>
+          <input type="text" id="username" class="username" disabled />
+        </div>
+
+        <div class="form-group">
+          <label>年龄：</label>
+          <input type="text" id="age" class="age" />
+        </div>
+
+        <div class="form-group">
+          <label>性别：</label>
+          <select id="gender" class="gender">
+            <option value="">请选择</option>
+            <option value="男">男</option>
+            <option value="女">女</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>昵称：</label>
+          <input type="text" id="nickname" class="nickname" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">确认修改</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../lib/axios.min.js"></script>
+    <script src="../lib/http.js"></script>
+    <script src="../js/self.js"></script>
+  </body>
+</html>

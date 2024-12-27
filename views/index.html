@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../lib/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="header container">
+      <h1>仿站电商平台</h1>
+      <p class="active off" style="float: right; font-size: 24px">
+        您好！<a href="./login.html" style="color: red">请登录</a>
+      </p>
+      <p class="active off" style="float: right; font-size: 24px">
+        你好！
+        <span class="nickname">用户昵称</span>
+        <button class="self">个人中心</button>
+        <button class="logout">退出登录</button>
+      </p>
+    </div>
+    <main>
+      <div class="list container"><a href="./list.html">购买商品</a></div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/img1.jpg" alt="本地测试图1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img2.jpg" alt="本地测试图2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img3.jpg" alt="本地测试图3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img4.jpg" alt="本地测试图4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img5.jpg" alt="本地测试图5" />
+          </div>
+        </div>
+        <!-- 分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <script src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../lib/axios.min.js"></script>
+    <script src="../lib/http.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // 循环模式
+        loop: true,
+        // 自动播放
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        // 分页器
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // 前进后退按钮
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+/* 注册页面样式 */
+.login-container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  width: 80px;
+  text-align: left;
+  margin-right: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-link {
+  margin: 15px 0;
+  justify-content: flex-start;
+  padding-left: 90px; /* 与输入框对齐 */
+}
+
+.login-link a {
+  color: #87ceeb;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-group button:hover {
+  background-color: #d3d3d3;
+}
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+  margin-left: 90px; /* 与输入框对齐 */
+}
+
+.header {
+  width: 100%;
+
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  background-color: #87ceeb;
+  color: white;
+  font-size: 34px;
+  width: 1400px;
+  line-height: 100px;
+  margin: 0 auto;
+}

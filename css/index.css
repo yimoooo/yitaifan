@@ -1,0 +1,123 @@
+/* 增加一些基本的重置样式 */
+body,
+h1,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-size: 1px;
+}
+h1 {
+  font-size: 44px;
+}
+
+/* 为容器添加一些边距和内边距 */
+.container {
+  max-width: 1200px;
+  /* 根据需要调整 */
+  margin: auto;
+  padding: 20px;
+}
+
+/* 头部样式 */
+.header {
+  width: 2000px;
+  /* 宽度 */
+  /* 高度或长度 */
+  background: #6bb7d8;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  /* 字体大小 */
+}
+
+/* 导航链接样式 */
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 主要内容区域样式 */
+main {
+  padding: 20px;
+}
+
+/* 列表样式 */
+.list {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 轮播图样式 */
+.swiper {
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  display: flex; /* 使用Flexbox布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 80%; /* 确保容器高度覆盖整个Swiper容器 */
+}
+
+/* .swiper-slide img { */
+/* max-width: 100%; 图片宽度不超过容器宽度 */
+/* max-height: 100%; 图片高度不超过容器高度 */
+/* object-fit: cover;  图片覆盖整个容器，保持宽高比  */
+/* } */
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+/*  分页器.swiper-pagination, 
+.swiper-button-prev
+.swiper-button-next,
+.swiper-scrollbar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}、导航按钮和滚动条的样式 */
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute; /* 绝对定位 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 向上移动50%，实现垂直居中 */
+  z-index: 10; /* 确保箭头在图片之上 */
+}
+
+.swiper-button-prev {
+  left: 10px; /* 距离容器左边的距离 */
+}
+
+.swiper-button-next {
+  right: 10px; /* 距离容器右边的距离 */
+}
+
+main > div {
+  font-size: 50px;
+}
+.active {
+  display: block;
+}
+.off {
+  display: none;
+}

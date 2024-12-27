@@ -1,0 +1,75 @@
+/* 个人中心页面样式 */
+.header {
+  background-color: #87ceeb;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  font-size: 34px;
+}
+
+.nav-links {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-links a {
+  color: #ff6b6b;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.profile-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+}
+
+.profile-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-form label {
+  width: 70px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.profile-form input,
+.profile-form select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.profile-form input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.profile-form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-form .submit-btn:hover {
+  background-color: #d3d3d3;
+}

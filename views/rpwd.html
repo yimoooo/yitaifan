@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/rpwd.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>修改密码</h1>
+      <a href="./index.html" class="back-link">回到首页</a>
+    </div>
+
+    <div class="rpwd-container">
+      <form id="rpwdForm">
+        <div class="form-group">
+          <label>原始密码：</label>
+          <input
+            type="password"
+            id="oldPassword"
+            class="oldPassword"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>新密码：</label>
+          <input
+            type="password"
+            id="newPassword"
+            class="newPassword"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>确认新密码：</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            class="confirmPassword"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <button type="submit">确认修改</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../lib/axios.min.js"></script>
+    <script src="../lib/http.js"></script>
+    <script src="../js/rpwd.js"></script>
+  </body>
+</html>
